@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Tool Converter</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">RTC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Currency</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Graphic Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="search-container">
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center">The Real Tool Converter</h1>
+    </div>
+
+    
+     <!-- Text -->
+    <p class="text-center">We at The Real Tool Converter belief your experience should be at the forfront of our minds.
+        <p class="text-center">That is why we have developed this converter to feature everything you need all in once
+            place.</p>
+        <p class="text-center">Welcome to the Wonderful World of The Real Tool Converter</p>
+
+        <div id="tool-converter">
+        </div>
+
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script>
+            converter_cat = 77;
+            converter_color_border = "#888888";
+            converter_color_title = "#c7c7c7";
+            converter_color_titlebg = "white";
+            converter_color_text = "black";
+            converter_color_bg = "#e1e1e1";
+
+            //function toolConverter() {
+
+            //var queryURL = "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63"
+            // url: queryURL,
+
+            $.ajax({
+                url: "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63",
+                method: "GET"
+            }).then(function (response) {
+                //$('#tool-converter').text(JSON.stringify(response));
+                console.log(response)
+            });
+        //}
+
+        </script>
+
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright  and Footer -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <p>The Real Tool Converter</p>
+            </div>
+            <!-- Copyright and Footer -->
+
+        </footer>
+</body>
+
+<script>
+
+   //
+    converter_cat = 77;
+    converter_color_border = "#888888";
+    converter_color_title = "#c7c7c7";
+    converter_color_titlebg = "white";
+    converter_color_text = "black";
+    converter_color_bg = "#e1e1e1";
+
+    function toolConverter() {
+
+        //var queryURL = "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63"
+        // url: queryURL,
+
+        $.ajax({
+            url: "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63",
+            method: "GET"
+        }).then(function (response) {
+            //$('#tool-converter').text(JSON.stringify(response));
+            console.log(response)
+        });
+    }
+
+</script>
+
+
+
+</html>
