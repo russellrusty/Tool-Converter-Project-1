@@ -1,0 +1,35 @@
+body{
+    height: 100%;
+}
+.navbar {
+    height: 100px;
+    background-color: #555;
+}
+.navbar-brand{
+    font-size: 50px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 87vh}
+    
+/* Set gray background color */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  
+}
+p{
+    background-color:lightgrey; 
+    padding: 15px;
+    justify-content: center;
+}
+
