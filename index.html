@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- Nav Bar -->
+    <!-- Nav and Search Bar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">RTC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -19,31 +19,29 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Currency</a>
+                    <a class="nav-link" href="#">Units</a>
                 </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Currency</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Graphic Calculator</a>
                 </li>
             </ul>
         </div>
-    </nav>
-
-    <!--Search Bar -->
-
-    <div class="search-container">
-        <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
         </form>
-    </div>
+    </nav>
 
     <div class="container">
         <h1 class="text-center">The Real Tool Converter</h1>
     </div>
 
-    
-     <!-- Text -->
+
+    <!-- Text -->
     <p class="text-center">We at The Real Tool Converter belief your experience should be at the forfront of our minds.
         <p class="text-center">That is why we have developed this converter to feature everything you need all in once
             place.</p>
@@ -52,7 +50,7 @@
         <div id="tool-converter">
         </div>
 
-        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <!-- <script type="text/javascript" src="jquery-3.3.1.js"></script>
         <script>
             converter_cat = 77;
             converter_color_border = "#888888";
@@ -73,21 +71,18 @@
                 //$('#tool-converter').text(JSON.stringify(response));
                 console.log(response)
             });
+             -->
         //}
 
         </script>
-             <!-- Copyright  and Footer -->
-        <footer class="page-footer font-small blue">
-           
-           
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                <p>The Real Tool Converter</p>
-            </div>
+        <!-- Copyright  and Footer -->
 
+        <footer>
+            &copy; 2019 The Real Tool Converter
         </footer>
 </body>
 
-<script>
+<!-- <script>
 
    //
     converter_cat = 77;
@@ -111,7 +106,7 @@
         });
     }
 
-</script>
+</script> -->
 
 
 
