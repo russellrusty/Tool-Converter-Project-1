@@ -54,14 +54,44 @@
     <p class="text-center">That is why we have developed a converter to feature everything you need all in one place</p>
     <p class="text-center">Welcome to the Wonderful World of The Real Tool Converter</p>
 
-    <div class="sidebar-left">
-        <a href="#popSearch1">Popular1 </a>
-        <a href="#popSearch2">Popular2</a>
-        <a href="#popSearch3">Popular3</a>
+    <div id="tool-converter">
     </div>
-    <div id=sign-in>
-        <button>Sign Up/Log in!</button>
-    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        converter_cat = 77;
+        converter_size = 2;
+        converter_color_border = "#888888";
+        converter_color_title = "#c7c7c7";
+        converter_color_titlebg = "white";
+        converter_color_text = "black";
+        converter_color_bg = "#e1e1e1";
+    </script>
+    <script type="text/javascript" id="converter_api" src="https://converter.eu/api/api.js?v2"></script>
+    <script>
+
+        function toolConverter() {
+
+            var queryURL = "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63";
+
+            $.ajax({
+                url: "http://data.fixer.io/api/latest?access_key=74fc4322272ae57b2471d10c4917ce63",
+                method: "GET"
+            }).then(function (response) {
+                $('#tool-converter').text(JSON.stringify(response));
+                console.log(response)
+
+
+
+            }).always(function () {
+                console.log("it ran?");
+            });
+
+        };
+
+        toolConverter()
+
+    </script>
 
     <!-- Copyright  and Footer -->
 
