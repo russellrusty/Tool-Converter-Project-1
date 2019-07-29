@@ -5,69 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/javascript" href="assets/javascript/script.js">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-1765880196926710",
-            enable_page_level_ads: true
-        });
-    </script>
+    <script src="granim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>Tool Converter</title>
 </head>
 
 <body>
-    <!-- Nav and Search Bar -->
+
+    <canvas id="canvas-basic"></canvas>
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">RTC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Units</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Currency</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Graphic Calculator</a>
-                </li>
-            </ul>
-        </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-        </form>
+
     </nav>
 
-    <div class="container">
-        <h1 class="text-center">The Real Tool Converter</h1>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-lg-1 sidenav1">
+                <p id="p-one">Ads Coming Soon!</a></p>
+                <p id="p-two">Ads Coming Soon!</a></p>
+                <p id="p-three">Ads Coming Soon!</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1 class="text-center">The Real Tool Converter</h1>
+                <p class="text-center">We at The Real Tool Converter believe your experience should be at the forefront
+                    of our minds</p>
+                <p class="text-center">That is why we have developed a converter to feature everything you need all in
+                    one place</p>
+                <p class="text-center">Welcome to the Wonderful World of The Real Tool Converter</p>
+
+            </div>
+
+            <div class="col-sm-1 sidenav2">
+                <p id="ad1">Ads Coming Soon!</p>
+                <p id="ad2">Ads Coming Soon!</p>
+                <p id="ad2">Ads Coming Soon!</p>
+            </div>
+
+        </div>
     </div>
-
-
-    <!-- Text -->
-    <p class="text-center">We at The Real Tool Converter believe your experience should be at the forefront of our minds
-    </p>
-    <p class="text-center">That is why we have developed a converter to feature everything you need all in one place</p>
-    <p class="text-center">Welcome to the Wonderful World of The Real Tool Converter</p>
-
-    <div class="sidebar-left">
-        <a href="#popSearch1">Popular1 </a>
-        <a href="#popSearch2">Popular2</a>
-        <a href="#popSearch3">Popular3</a>
-    </div>
-    <div id=sign-in>
-        <button>Sign Up/Log in!</button>
-    </div>
-
-    <!-- Copyright  and Footer -->
 
     <footer>
         &copy; 2019 The Real Tool Converter
     </footer>
+
+
+    <script>
+        var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'left-right',
+            isPausedWhenNotInView: true,
+            states: {
+                "default-state": {
+                    gradients: [
+                        ['#ff9966', '#ff5e62'],
+                        ['#00F260', '#0575E6'],
+                        ['#e1eec3', '#f05053'],
+                    ]
+                }
+            }
+        });
+    </script>
+
+
+
+
 </body>
 
 

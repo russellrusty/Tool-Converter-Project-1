@@ -1,3 +1,15 @@
+#canvas-basic {
+ position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
 footer {
     background-color: #666666;
     padding: 20px 0;
@@ -23,3 +35,47 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+#navbar {
+    border-color: #666666;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.sidenav1 {
+    padding-top: 20px;
+    background-color: #666666;
+    margin-left: 0;
+    margin-right: auto;
+}
+.sidenav2 {
+    padding-top: 20px;
+    background-color: #666666;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#p-one {
+    padding-bottom: 20px;
+    
+}
+#p-two {
+    padding-bottom: 20px;
+}
+#p-three {
+    padding-bottom: 20px;
+}
+
+#ad1 {
+    padding-bottom: 20px;
+    
+}
+#ad2 {
+    padding-bottom: 20px;
+}
+
+
+
+
+.row.content {height: 87vh}
+
