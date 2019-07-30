@@ -74,8 +74,15 @@ footer {
     padding-bottom: 20px;
 }
 
-
-
-
 .row.content {height: 87vh}
 
+.button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button1, #button2, #button3 {
+    margin: 50px;
+    border-radius: 8px;
+}
